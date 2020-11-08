@@ -5,6 +5,7 @@
     --white-cl: #FFFFFF;
     --dark-bg-cl: #2F303A;
     --grey-bag-cl: #F5F4FA;
+    --social-cl: #AFB1B8;
     --rgb: rgba(255, 255, 255, 0.6)
 }
 html {
@@ -52,7 +53,7 @@ address {
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
-  }
+}
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -65,7 +66,7 @@ address {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
+}
 .skills-list {
     display: flex;
     flex-wrap: wrap;
@@ -82,6 +83,32 @@ address {
 .link:hover,
 .link:focus {
     color: var(--accent-cl);
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+.social-icons-svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--social-cl);
+}
+.social-icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--white-cl);
+    border-radius: 50%;
+}
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+    fill: var(--accent-cl);
+}
+.social-icons-item:not(:last-child) {
+    margin-right: 10px;
 }
 .header {
     background-color: var(--white-cl);
