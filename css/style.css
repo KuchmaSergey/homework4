@@ -333,6 +333,16 @@ address {
     font-weight: 700;
     color: var(--black-cl);
 }
+.client {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 94px;
+}
 .page-title {
     margin-bottom: 30px;
     max-width: 696px;
@@ -345,6 +355,23 @@ address {
     margin-right: auto;
     margin-left: auto;
 }
+
+.client-svg {
+    fill: var(--social-cl);
+}
+.client-border:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-box {
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--social-cl);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 94px;
+  }
 
 .section-title {
     font-size: 36px;
@@ -376,6 +403,17 @@ address {
     text-align: center;
     color: var(--main-text-cl);
 }
+.join {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-cl);
+}
+
 .portfolio {
     padding: 94px 0px;
 }
