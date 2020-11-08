@@ -110,6 +110,18 @@ address {
 .social-icons-item:not(:last-child) {
     margin-right: 10px;
 }
+.company-icons-item:not(:last-child) {
+    margin-right: 30px;
+}
+.company-icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 50px;
+    background-color: var(--white-cl);
+    
+}
 .header {
     background-color: var(--white-cl);
     margin-top: 24px;
@@ -203,7 +215,17 @@ address {
 }
 .hero-content {
     text-align: center;
- }
+}
+.hero-bag {
+    background-image: url(../img/img.hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.hero-bag {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)rgba(47, 48, 58, 0.4));
+}
+
     
 .btn {
     /* Заказать услугу */
