@@ -7,6 +7,7 @@
     --grey-bag-cl: #F5F4FA;
     --social-cl: #AFB1B8;
     --rgb: rgba(255, 255, 255, 0.6)
+    --join-sircle: rgba(255, 255, 255, 0.1);
 }
 html {
     box-sizing: border-box;
@@ -93,20 +94,7 @@ address {
     height: 20px;
     fill: var(--social-cl);
 }
-.social-icons-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    background-color: var(--white-cl);
-    border-radius: 50%;
-}
 
-.social-icons-link:hover .social-icons-svg,
-.social-icons-link:focus .social-icons-svg {
-    fill: var(--accent-cl);
-}
 .social-icons-item:not(:last-child) {
     margin-right: 10px;
 }
@@ -395,6 +383,23 @@ address {
     line-height: 1.188;
     text-align: center;
 }
+.cercle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--white-cl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle:hover,
+.circle:focus {
+    background-color: var(--accent-cl);
+}
+.circle:hover .social-icons-svg,
+.circle:focus .social-icons-svg {
+  fill: var(--white-cl);
+}
 
 .label {
     font-weight: normal;
@@ -404,16 +409,38 @@ address {
     color: var(--main-text-cl);
 }
 .join {
-    font-family: Roboto;
-    font-style: normal;
+    margin-left: 70px;
+    margin-right: auto;
+}
+.join-title {
     font-weight: bold;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-cl);
 }
-
+.join-list {
+    display: flex;
+}
+.join-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--join-sircle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join-icons {
+    width: 20px;
+    height: 20px;
+    fill: var(--white-cl);
+}
+.join-circle:hover,
+.join-circle:focus {
+  background-color: var(--accent-cl);
+}
 .portfolio {
     padding: 94px 0px;
 }
