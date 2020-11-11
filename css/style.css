@@ -177,6 +177,17 @@ address {
     letter-spacing: 0.02em;
     color: var(--main-text-cl);
 }
+.contacts-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+.contacts-icon :hover,
+.contacts-icon :focus  {
+    fill: var(--accent-cl)
+
+}
 .address {
     color: var(--white-cl);
 }
@@ -259,6 +270,16 @@ address {
 .about {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.grey-box {
+    display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--grey-bag-cl);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 .potfolio-menu-item:not(:last-child) {
@@ -359,7 +380,15 @@ address {
     justify-content: center;
     align-items: center;
     margin-bottom: 94px;
-  }
+}
+.client-svg:hover,   
+.client-svg:focus {
+    fill: var(--accent-cl)
+}
+ .clients-box:hover,
+ .clients-box:focus {
+    border: 1px solid var(--accent-cl)
+}
 
 .section-title {
     font-size: 36px;
