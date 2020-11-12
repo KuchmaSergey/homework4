@@ -164,6 +164,9 @@ address {
     color: var(--white-cl);
 }
 .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1,144;
@@ -171,22 +174,32 @@ address {
     color: var(--main-text-cl);
 }
 .mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1,144;
     letter-spacing: 0.02em;
     color: var(--main-text-cl);
 }
-.contacts-icon {
+.contacts-icon-mail {
     width: 16px;
-    height: 16px;
+    height: 12px;
     fill: currentColor;
     margin-right: 10px;
-    
 }
-.contacts-icon :hover,
-.contacts-icon :focus  {
-    fill: var(--accent-cl)
+.contacts-icon-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--main-text-cl);
+}
+.link:hover .contacts-icon-mail,
+.link:focus .contacts-icon-mail,
+.link:hover .contacts-icon-phone,
+.link:focus .contacts-icon-phone {
+    fill: var(--accent-cl);
 
 }
 .address {
@@ -382,14 +395,17 @@ address {
     align-items: center;
     margin-bottom: 94px;
 }
-.client-svg:hover,   
-.client-svg:focus {
-    fill: var(--accent-cl)
-}
+
  .clients-box:hover,
  .clients-box:focus {
     border: 1px solid var(--accent-cl)
 }
+.clients-box:hover .client-svg,
+.clients-box:hover .client-svg,
+.clients-box:focus .client-svg,
+.clients-box:focus .client-svg {
+    fill: var(--accent-cl);
+} 
 
 .section-title {
     font-size: 36px;
@@ -413,7 +429,7 @@ address {
     line-height: 1.188;
     text-align: center;
 }
-.cercle {
+.circle {
     width: 44px;
     height: 44px;
     border-radius: 50%;
